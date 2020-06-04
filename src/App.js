@@ -133,16 +133,6 @@ function App() {
               List of Bail Funds for Protestors across the Country
             </h1>
 
-            <p>
-              This list is intended to be comprehensive. We worked with{" "}
-              <a href="https://www.communityjusticeexchange.org/national-bail-fund-network">
-                National Bail Fund Network
-              </a>{" "}
-              to ensure the validity of these. If there is something missing, please email{" "}
-              <a href="mailto:info@communityjusticeexchange.org">info@communityjusticeexchange.org</a> or make a pull
-              request on the <a href="https://github.com/bailfunds/bailfunds.github.io">github repository</a>.
-            </p>
-
             <h2 id="national">National</h2>
             <ul>
               <li>
@@ -854,82 +844,6 @@ function App() {
                 criminal legal system
               </li>
             </ul>
-          </div>
-          <div className="content__line">
-            <span className="type type--3">Sandeca</span>
-            <span className="type type--4">Budapest</span>
-            <span className="type type--3">Sandeca</span>
-            <span className="type type--4">Budapest</span>
-          </div>
-          <div className="content__line">
-            <span className="type type--6">Franklin</span>
-            <span className="type type--1">Berlin</span>
-            <span className="type type--6">Franklin</span>
-          </div>
-          <div className="content__line">
-            <span className="type type--5">Tokyo</span>
-            <span className="type type--2">Hoshen</span>
-            <span className="type type--5">Tokyo</span>
-          </div>
-          <div className="content__line">
-            <span className="type type--1">Andrew</span>
-            <span className="type type--7">New York</span>
-            <span className="type type--1">Andrew</span>
-            <span className="type type--7">New York</span>
-          </div>
-          <div className="content__line">
-            <span className="type type--3">Sandeca</span>
-            <span className="type type--4">Budapest</span>
-            <span className="type type--3">Sandeca</span>
-            <span className="type type--4">Budapest</span>
-            <span className="type type--3">Sandeca</span>
-            <span className="type type--4">Budapest</span>
-          </div>
-          <div className="content__line">
-            <span className="type type--6">Franklin</span>
-            <span className="type type--1">Berlin</span>
-            <span className="type type--6">Franklin</span>
-            <span className="type type--1">Berlin</span>
-            <span className="type type--6">Franklin</span>
-            <span className="type type--1">Berlin</span>
-          </div>
-          <div className="content__line">
-            <span className="type type--5">Tokyo</span>
-            <span className="type type--2">Hoshen</span>
-            <span className="type type--5">Tokyo</span>
-            <span className="type type--2">Hoshen</span>
-            <span className="type type--5">Tokyo</span>
-            <span className="type type--2">Hoshen</span>
-          </div>
-          <div className="content__line">
-            <span className="type type--1">Bocelli</span>
-            <span className="type type--2">Barcelona</span>
-            <span className="type type--1">Bocelli</span>
-            <span className="type type--2">Barcelona</span>
-          </div>
-          <div className="content__line">
-            <span className="type type--3">Sandeca</span>
-            <span className="type type--4">Budapest</span>
-            <span className="type type--3">Sandeca</span>
-            <span className="type type--4">Budapest</span>
-            <span className="type type--3">Sandeca</span>
-            <span className="type type--4">Budapest</span>
-          </div>
-          <div className="content__line">
-            <span className="type type--6">Franklin</span>
-            <span className="type type--1">Berlin</span>
-            <span className="type type--6">Franklin</span>
-            <span className="type type--1">Berlin</span>
-            <span className="type type--6">Franklin</span>
-            <span className="type type--1">Berlin</span>
-          </div>
-          <div className="content__line">
-            <span className="type type--5">Tokyo</span>
-            <span className="type type--2">Hoshen</span>
-            <span className="type type--5">Tokyo</span>
-            <span className="type type--2">Hoshen</span>
-            <span className="type type--5">Tokyo</span>
-            <span className="type type--2">Hoshen</span>
           </div>
         </div>
         <div className="screen" id="btn-debug">
