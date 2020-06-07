@@ -1,9 +1,8 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, NavLink } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
-// import Fade from "react-reveal/Fade";
 import { gsap } from "gsap";
-// import { NavLink } from "react-router-dom";
+import Fade from "react-reveal/Fade";
 // import "./App.scss";
 
 import About from "../../pages/About.jsx";
@@ -47,21 +46,14 @@ const PagesRoutersTransitions = () => {
 
   return (
     <div className="page-content">
+      <div className="title">
+        <NavLink to="/" exact className="title__link">
+          08:46
+        </NavLink>
+      </div>
       {routes.map(({ path, Component }) => (
         <Route key={path} exact path={path}>
-          {({ match }) => (
-            <CSSTransition
-              in={match != null}
-              timeout={1200}
-              classNames="page"
-              onExit={onExit}
-              onEntering={onEnter}
-              unmountOnExit>
-              <div className="page">
-                <Component />
-              </div>
-            </CSSTransition>
-          )}
+          {({ match }) => <Component />}
         </Route>
       ))}
     </div>

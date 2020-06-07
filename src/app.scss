@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+.App {
+  position: relative;
+}
 :root {
   font-size: 15px;
   --color-bg: black;
@@ -47,6 +50,7 @@ body {
   padding: 0 2rem;
   width: 100%;
   display: block;
+  position: relative;
   @media screen and (max-width: 500px) {
     padding: 0 1rem;
   }
@@ -64,17 +68,41 @@ body {
       padding: 2rem 0;
     }
   }
+
+  .container {
+    width: 100%;
+    max-width: 846px;
+    margin: 0 auto;
+  }
+
   p {
     line-height: 1.5;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   a {
     text-decoration: none;
     color: var(--color-text);
     &:hover {
-      text-decoration: underline;
       color: var(--color-text);
+      opacity: 0.8;
     }
   }
+}
+
+.title {
+  font-size: 11vh;
+  @media screen and (max-width: 500px) {
+    font-size: 3rem;
+  }
+  font-family: var(--font-extrawide);
+  mix-blend-mode: difference;
+  color: var(--color-text);
+  width: 100%;
+  position: fixed;
+
+  z-index: 2;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
 }

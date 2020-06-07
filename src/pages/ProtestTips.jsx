@@ -5,7 +5,7 @@ const ProtestTips = () => {
   return (
     <div>
       <h1>{homeLinks.protestTips}</h1>
-      <div>
+      <div className="container">
         <p>
           Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras
           justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Nullam
