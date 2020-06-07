@@ -1,0 +1,61 @@
+.test {
+  h2,
+  h3 {
+    font-size: 10vh;
+    padding-bottom: 1vh;
+  }
+  p {
+    font-size: 8vh;
+    padding-bottom: 4vh;
+  }
+
+  li {
+    font-size: 6vh;
+    padding-bottom: 4vh;
+  }
+  h1,
+  h2,
+  h3,
+  p,
+  li {
+    display: block !important;
+    color: white !important;
+    text-transform: uppercase;
+    font-size: 8vh;
+    font-family: tenez, sans-serif;
+    font-weight: 400;
+  }
+  h1 {
+    font-size: 13vh;
+    padding-bottom: 8vh;
+  }
+  h2 {
+    font-size: 10vh;
+  }
+
+  @media screen and (max-width: 500px) {
+    h1,
+    h2,
+    h3,
+    p,
+    li {
+      display: block !important;
+      color: white !important;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-family: tenez, sans-serif;
+      font-weight: 400;
+    }
+    ul,
+    li {
+      padding-left: 0;
+    }
+    h1 {
+      font-size: 2.5rem;
+      padding-bottom: 8vh;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+  }
+}
