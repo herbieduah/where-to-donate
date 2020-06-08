@@ -6,6 +6,8 @@
 
 .App {
   position: relative;
+  height: 100%;
+  width: 100%;
 }
 :root {
   font-size: 15px;
@@ -51,27 +53,48 @@ body {
   width: 100%;
   display: block;
   position: relative;
-  @media screen and (max-width: 500px) {
-    padding: 0 1rem;
-  }
+  overflow: hidden;
 
   h1 {
-    padding: 7vh 0;
+    padding: 4vh 2rem;
     font-family: var(--font-wide);
-    font-size: 12vh;
+    font-size: 10vh;
     line-height: 1.2;
     color: var(--color-text);
     text-align: center;
     @media screen and (max-width: 500px) {
       font-size: 2.5rem;
-      text-align: left;
-      padding: 2rem 0;
+      padding: 2rem 1rem;
+    }
+  }
+  h2 {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    font-family: var(--font-wide);
+    text-align: center;
+    @media screen and (max-width: 500px) {
+      font-size: 2rem;
+      padding-top: 1.5rem;
+    }
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: var(--font-wide);
+    line-height: 1;
+    margin-bottom: 0;
+    @media screen and (max-width: 500px) {
+      font-size: 1.5rem;
     }
   }
 
   .container {
     width: 100%;
-    max-width: 846px;
+    max-width: 750px;
+    @media screen and (max-width: 500px) {
+      padding: 0 1rem;
+    }
+
     margin: 0 auto;
   }
 
@@ -91,18 +114,40 @@ body {
 }
 
 .title {
-  font-size: 11vh;
+  font-size: 7vw;
+  top: 0;
+  overflow: hidden;
   @media screen and (max-width: 500px) {
-    font-size: 3rem;
+    font-size: 18vw;
+    top: 0;
   }
   font-family: var(--font-extrawide);
   mix-blend-mode: difference;
   color: var(--color-text);
   width: 100%;
   position: fixed;
-
-  z-index: 2;
+  margin: 0 auto;
+  z-index: 10000;
   text-align: center;
   font-weight: bold;
   text-decoration: none;
+  transition: all 0.3s;
+  &:hover,
+  &:focus {
+    transform: scale(0.97);
+  }
+}
+
+.anchor {
+  display: none;
+}
+.whereToDonate {
+  a {
+    font-size: 1.2rem;
+    &:after {
+      content: "↗";
+      display: inline-block;
+      padding-left: 0.5rem;
+    }
+  }
 }

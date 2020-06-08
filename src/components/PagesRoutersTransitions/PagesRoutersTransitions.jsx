@@ -1,8 +1,9 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch, withRouter } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 // import Fade from "react-reveal/Fade";
 import { gsap } from "gsap";
+import FoldEffect from "../FoldEffect/FoldEffect.jsx";
 // import { NavLink } from "react-router-dom";
 // import "./App.scss";
 
@@ -46,26 +47,32 @@ const PagesRoutersTransitions = () => {
   };
 
   return (
-    <div className="page-content">
-      {routes.map(({ path, Component }) => (
-        <Route key={path} exact path={path}>
-          {({ match }) => (
-            <CSSTransition
-              in={match != null}
-              timeout={1200}
-              classNames="page"
-              onExit={onExit}
-              onEntering={onEnter}
-              unmountOnExit>
-              <div className="page">
-                <Component />
-              </div>
-            </CSSTransition>
-          )}
-        </Route>
-      ))}
-    </div>
+    <>
+      <div className="page-content">
+        <Switch>
+          {routes.map(({ path, Component }) => (
+            <Route key={path} exact path={path}>
+              {({ match }) => (
+                <CSSTransition
+                  in={match != null}
+                  timeout={1200}
+                  classNames="page"
+                  onExit={onExit}
+                  onEntering={onEnter}
+                  unmountOnExit>
+                  <div className="page">
+                    <FoldEffect>
+                      <Component />
+                    </FoldEffect>
+                  </div>
+                </CSSTransition>
+              )}
+            </Route>
+          ))}
+        </Switch>
+      </div>
+    </>
   );
 };
 
-export default PagesRoutersTransitions;
+export default withRouter(PagesRoutersTransitions);

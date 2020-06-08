@@ -1,9 +1,9 @@
 export const homeLinks = {
   about: "About this site",
-  protestTips: "Tips on how to protest",
+  protestTips: "Before you go to a protest",
   whatToBringToProtest: "What to bring to a protest",
-  whereToDonate: "Where to donate",
-  petitionsYouCanSign: "Petition you can sign",
+  whereToDonate: "Bail funds you can donate to",
+  petitionsYouCanSign: "Petitions you can sign",
   whereProtests: "Where are the protests happening?",
   knowYourRights: "Know your rights",
 };
