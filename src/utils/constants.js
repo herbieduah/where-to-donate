@@ -1,9 +1,31 @@
 export const homeLinks = {
   about: "About this site",
-  protestTips: "Before you go to a protest",
-  whatToBringToProtest: "What to bring to a protest",
+  protestTips: "While you're at a protest",
+  whatToBringToProtest: "What to bring (or not to bring) to a protest",
   whereToDonate: "Bail funds you can donate to",
   petitionsYouCanSign: "Petitions you can sign",
   whereProtests: "Where are the protests happening?",
   knowYourRights: "Know your rights",
 };
+
+export const changeOrgLinks = [
+  "https://www.change.org/p/minneapolis-district-attorney-raise-the-degree",
+  "https://www.change.org/p/mayor-jacob-frey-justice-for-george-floyd",
+  "https://www.change.org/p/federal-bureau-of-investigation-justice-for-george-floyd",
+  "https://www.change.org/p/district-attorney-tom-durden-justice-for-ahmaud-arbery-i-run-with-maud",
+  "https://www.change.org/p/federal-bureau-of-investigation-disbarment-of-george-e-barnhill",
+  "https://www.change.org/p/shaun-king-justice-for-amaud-arbery",
+  "https://www.change.org/p/justice-for-regis-korchinski-paquet",
+  "https://www.change.org/p/justice-for-tamir-rice-appoint-a-special-prosecutor",
+  "https://www.change.org/p/department-of-justice-investigate-the-killing-of-tamir-rice",
+  "https://www.change.org/p/united-states-supreme-court-justice-for-kendrick-johnson",
+  "https://www.change.org/p/mayor-joe-hogsett-justice-for-sean-reed",
+  "https://www.change.org/p/joe-hogsett-justice-4-sean-reed-conviction-of-indianapolis-police-officers",
+  "https://www.change.org/p/florida-police-department-justice-for-alejandro-vargas-martinez",
+  "https://www.change.org/p/black-lives-matter-activists-justice-for-tony-mcdade",
+  "https://www.change.org/p/prefeitura-do-rio-de-janeiro-justice-for-jo%C4%81o-pedro",
+  "https://www.change.org/p/us-senate-hands-up-act",
+  "https://www.change.org/p/illinois-governor-correcting-a-wrongful-conviction-kyjuanzi-harris",
+  "https://www.change.org/p/julius-jones-is-innocent-don-t-let-him-be-executed-by-the-state-of-oklahoma",
+  "https://www.change.org/p/govia-thameslink-justice-for-belly-mujinga",
+];

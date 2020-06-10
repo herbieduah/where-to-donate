@@ -61,9 +61,11 @@ const PagesRoutersTransitions = () => {
                   onEntering={onEnter}
                   unmountOnExit>
                   <div className="page">
-                    <FoldEffect>
-                      <Component />
-                    </FoldEffect>
+                    <div>
+                      <FoldEffect>
+                        <Component />
+                      </FoldEffect>
+                    </div>
                   </div>
                 </CSSTransition>
               )}
