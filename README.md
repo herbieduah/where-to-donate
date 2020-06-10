@@ -1,1 +1,1 @@
-I basically combined the code from the [Bail Fund Project](https://bailfunds.github.io/) and this [Codrops Tutorial](https://tympanus.net/Tutorials/FoldingDOM/index.html) and me this with the help from [Create React App](https://github.com/facebook/create-react-app).gi
+That's how long Officer Chauvin kneeled on George Floyd's neck. Here is how you can help.
