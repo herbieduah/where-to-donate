@@ -1,8 +1,8 @@
 import React from "react";
-import { homeLinks, changeOrgLinks } from "../utils/constants";
+import { changeOrgLinks } from "../utils/constants";
 import { linksHelper } from "../utils/helpers";
 
-const PetitionsYouCanSign = () => {
+const PetitionsYouCanSign = ({ title, pageClass }) => {
   const allChangeOrgPetitions = changeOrgLinks.map((data, index) => {
     return (
       <li key={index}>
@@ -14,9 +14,9 @@ const PetitionsYouCanSign = () => {
   });
 
   return (
-    <div>
-      <h1>{homeLinks.petitionsYouCanSign}</h1>
-      <div className="container petitions">
+    <div className={pageClass}>
+      <h1>{title}</h1>
+      <div className="container">
         <ul>{allChangeOrgPetitions}</ul>
       </div>
     </div>

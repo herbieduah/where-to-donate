@@ -1,18 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const HomeLink = ({ link, text, outer }) => {
+const HomeLink = ({ linkInfo }) => {
+  const { link, title } = linkInfo[Object.keys(linkInfo)[0]];
   return (
     <>
-      {outer ? (
-        <a href={link} target="__blank">
-          {text}&nbsp;↗
-        </a>
-      ) : (
+      {link ? (
         <NavLink to={`/${link}`} exact>
-          {text}&nbsp;→
+          {title}
         </NavLink>
-      )}
+      ) : null}
     </>
   );
 };

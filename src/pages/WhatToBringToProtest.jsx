@@ -1,10 +1,9 @@
 import React from "react";
-import { homeLinks } from "../utils/constants";
 
-const WhatToBringToProtest = () => {
+const WhatToBringToProtest = ({ title, pageClass }) => {
   return (
-    <div>
-      <h1>{homeLinks.whatToBringToProtest}</h1>
+    <div className={pageClass}>
+      <h1>{title}</h1>
       <div className="container whattobring">
         <p>
           Chances are if you're going out to protest, you'll probably be there for quite a while. To be ready and stay

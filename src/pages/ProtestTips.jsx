@@ -1,11 +1,10 @@
 import React from "react";
-import { homeLinks } from "../utils/constants";
 
-const ProtestTips = () => {
+const ProtestTips = ({ title, pageClass }) => {
   return (
-    <div>
-      <h1>{homeLinks.protestTips}</h1>
-      <div className="container whileyouattheprotest">
+    <div className={pageClass}>
+      <h1>{title}</h1>
+      <div className="container">
         <p>
           When you are heading out to protest, you are exercising your rights to free speech and peaceful protest.
           Though you may set out with preset expectations, keep in mind that this may not be the reality you face. We

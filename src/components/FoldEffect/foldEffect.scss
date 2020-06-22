@@ -51,12 +51,18 @@
   width: 100vw;
   height: 80vh;
   will-change: transform;
+  @media screen and (max-width: 500px) {
+    height: 90vh;
+  }
 }
 
 .wrapper-3d {
   position: relative;
   perspective: 250px;
   transform-style: preserve-3d;
+  @media screen and (max-width: 500px) {
+    perspective: 300px;
+  }
 }
 
 .fold-scroller {
@@ -80,6 +86,9 @@
   left: 0;
   top: 0;
   bottom: 0;
+  @media screen and (max-width: 500px) {
+    transform: translateZ(0px) translate3d(0, 90vh, 0) rotateX(120deg) scale3d(1, 1.002004008016032, 1);
+  }
 }
 
 .fold-size-fix {
@@ -96,6 +105,9 @@
   right: 0;
   top: 0;
   bottom: 0;
+  @media screen and (max-width: 500px) {
+    transform: translateZ(0px) translate3d(0, -90vh, 0) rotateX(-120deg) scale3d(1, 1.002004008016032, 1);
+  }
 }
 
 .fold-before h1 {

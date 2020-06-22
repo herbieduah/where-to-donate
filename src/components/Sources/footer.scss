@@ -1,0 +1,22 @@
+.footer {
+  padding: 3rem 0;
+  h2 {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    font-family: var(--font-wide);
+    text-align: center;
+    @media screen and (max-width: 500px) {
+      font-size: 2rem;
+      padding-top: 1.5rem;
+    }
+  }
+  a {
+    font-size: 1rem;
+    text-decoration: underline;
+    &:after {
+      content: "↗";
+      display: inline-block;
+      padding-left: 0.5rem;
+    }
+  }
+}

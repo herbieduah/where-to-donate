@@ -1,13 +1,12 @@
 import React from "react";
-import { homeLinks } from "../utils/constants";
 
-const About = () => {
+const About = ({ title, pageClass }) => {
   return (
-    <div>
-      <h1>{homeLinks.about}</h1>
-      <div className="container about">
+    <div className={pageClass}>
+      <h1>{title}</h1>
+      <div className="container">
         <p>Wanted to create simple yet slick site to help out the movemenet</p>
-        <p>Stillin the works.</p>
+        <p>Still in the works.</p>
       </div>
     </div>
   );

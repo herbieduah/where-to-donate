@@ -1,11 +1,10 @@
 import React from "react";
-import { homeLinks } from "../utils/constants";
 
-const WhereToProtest = () => {
+const WhereToProtest = ({title,pageClass}) => {
   return (
     <div>
-      <h1>{homeLinks.whereToDonate}</h1>
-      <div className="container whereToDonate">
+      <h1>{title}</h1>
+      <div className="container">
         
       <section>
            
