@@ -1,12 +1,18 @@
 import React from "react";
-import "./foldEffect.scss";
+import "./footer.scss";
 
 const Footer = ({ resources, sources, lastUpdated }) => {
   return (
-    <div className="footer">
-      {resources ? <SourcesResources links={resources} heading="Other Resources" /> : null}
-      {sources ? <SourcesResources links={sources} heading="Sources" /> : null}
-      {lastUpdated ? <small>{lastUpdated}</small> : null}
+    <div className="footer container">
+      {resources.length !== 0 ? <SourcesResources links={resources} heading="Other Resources" /> : null}
+      {sources.length !== 0 ? <SourcesResources links={sources} heading="Sources" /> : null}
+      {lastUpdated ? (
+        <div className="lastUpdated">
+          {" "}
+          <strong>Last Updated: </strong>
+          <span>{lastUpdated}</span>
+        </div>
+      ) : null}
     </div>
   );
 };
